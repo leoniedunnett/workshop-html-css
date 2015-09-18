@@ -1,0 +1,336 @@
+/* Step 1 */
+/* Basic reset -----------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 100;
+    box-sizing: border-box;
+
+}
+
+img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+/* Step 2: Add some color to header and footer */
+/* Theme -----------------------*/
+header {
+    color: white;
+    background: black;
+}
+
+footer {
+    color: #a2a2a2;
+    background: #222;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Step 3: Add Base styling for footer at bottom */
+/* Base -----------------------*/
+/* Footer at bottom */
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {margin: 0 auto 50px;} /* bottom = footer height */
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+/* End: Footer at bottom */
+
+
+
+
+
+
+/* Step 4: Add some font styles */
+/* Font -----------------------*/
+body {
+    font-size: 100%;
+    font-family: georgia;
+}
+
+.home-intro,
+.content-box,
+footer {text-align: center;}
+
+a {text-decoration: none;}
+
+h1,
+h2,
+p,
+li {margin-bottom: 15px;}
+
+h1 {font-size: 40px;}
+h2 {font-size: 24px;}
+
+h1,
+h2 {text-transform: uppercase;}
+
+
+
+
+
+
+
+
+/* Step 5: More base styles (under 'Footer at bottom' styles) */
+header {
+    height: 54px;
+    padding: 0 5px;
+}
+
+footer {padding: 15px 0;}
+
+header,
+.home-intro,
+.content-wrap {
+    clear:both;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Step 6: Add Layout styles - nav and section */
+/* Layout -----------------------*/
+nav {float: right;}
+nav li {
+    padding: 0 2px;
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 18px 10px;
+}
+
+section {padding: 32px 16px 20px;}
+
+
+
+
+
+
+
+
+
+
+
+/* Step 7: Add some color to nav and .content-box */
+/* Theme -----------------------*/
+nav a {color: white;}
+nav a:hover {
+    color: #fa4542;
+    background: white;
+}
+
+.content-box {background: #ececec;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Now: Add Logo URL to html */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Step 8: Add responsive styles - mobiles
+/* Phones -----------------------*/
+@media screen and (max-width:767px) {
+
+    /* Layout */
+    .logo img {
+        width: 140px;
+        padding: 20px 0;
+    }
+
+    /* Modules */
+    .content-box {
+        width:96%;
+        margin: 10px auto;
+    }
+
+}
+
+
+
+
+
+
+
+/* Step 9: Add responsive styles - tablet/desktop */
+/* Tablet/Desktop -----------------------*/
+@media screen and (min-width:768px) {
+    /* Base */
+    .content-wrap {
+        max-width: 1240px;
+        padding-bottom: 25px;
+    }
+    /* Font */
+    .home-intro h1 {font-size: 80px;}
+    .home-intro p {font-size: 20px;}
+    /* Layout */
+    .logo img {
+        width: 220px;
+        padding: 16px 0;
+    }
+    .content-wrap {margin-top: 10px;}
+    /* Modules */
+    .content-box {
+        margin: 1%;
+        float: left;
+        width: 31.3%;
+        min-height: 166px;
+    }
+}
+
+
+
+
+
+
+
+/* Step 10: Add button styles
+    (include 'Modules' above 'Themes' section) */
+/* Modules -----------------------*/
+.button {
+    margin-top: 5px;
+    font-weight: bold;
+    padding: 16px 32px;
+    border-radius: 3px;
+    display: inline-block;
+    transition: all .15s ease-in-out;
+}
+/* Add these styles to the 'Theme' section */
+.button.red {
+    color: white;
+    background: #fa4542;
+    box-shadow: 0 3px 0 0 #be0201;
+}
+.button.white {
+    color:#383838;
+    background:#f6f6f6;
+    box-shadow: 0 3px 0 0 #a2a2a2;
+}
+.button.red:hover {background-color: #f6201d;}
+.button.white:hover {background-color: white;}
+
+
+
+
+
+
+
+
+/* Advanced styling if time*/
+
+/* Advanced Step 1: Add google font style to headings
+        Include style URL in html
+        (add to 'Font' section) */
+/*h1,
+h2 {font-family: 'Maven Pro', sans-serif;}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Advanced Step 2: Add background image to .home-intro and rgba gradient
+    Add to existing tablet/desktop media query */
+
+/*@media screen and (min-width:768px) {
+    .home-intro h1 {margin-top: 35px;}
+    .home-intro {
+        color: white;
+        height: 335px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("/img/ga-background.jpg");
+    }
+}*/
+
+/* src = https://s3.amazonaws.com/ga-core/core/core-static/metros/default-background.jpg */
